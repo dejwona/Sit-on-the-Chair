@@ -229,26 +229,25 @@ nav p {
 /*cennik*/
 .container_wrap2 {
     clear: both;
-    padding-top: 20px;
-    background: rgba(237,237,237,1);
-    background: -moz-linear-gradient(top, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(237,237,237,1)), color-stop(53%, rgba(246,246,246,1)), color-stop(100%, rgba(255,255,255,1)));
-    background: -webkit-linear-gradient(top, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
-    background: -o-linear-gradient(top, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
-    background: -ms-linear-gradient(top, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
-    background: linear-gradient(to bottom, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff', GradientType=0 );
+    padding: 20px 0;
+    background-color: #F1F1F1;
+}
+
+.clearfix:after {
+    content:" ";
+    display:table;
+    clear:both;
 }
 
 
-.leadCennik {
+.leadCennik, .leadKontakt {
     font-size: 18px;
     text-transform: uppercase;
     line-height: 0px;
     padding-top: 1em;
 }
 
-.underlineCennik {
+.underlineCennik, .underlineKontakt {
     background-color: #27C7AB;
     width: 300px;
     height: 7px;
@@ -268,7 +267,7 @@ nav p {
     text-align: center;
     border: 1px solid #C0C0C0;
     width: 300px;
-    height: 400px;
+    height: 420px;
     position: relative;
     margin-top: 50px;
     background-color: #F9F9F9;
@@ -364,27 +363,98 @@ nav p {
 .cennikBreakOne {
     margin: 0;
     display: block;
-    height: 50px;
+    height: 101px;
 }
 
 .cennikBreakTwo {
     margin: 0;
     display: block;
-    height: 40px;
+    height: 65px;
 }
 
 .cennikBreakThree {
     margin: 0;
     display: block;
-    height: 18px;
+    height: 28px;
 }
 
 .buttonDolacz{
     text-align: center;
+    text-transform: uppercase;
     background-color: #27C7AB;
-    font-size: 13px;
+    font-size: 15px;
     padding: 5px 20px;
     color: white;
     display: inline;
-    border-radius: 3px;
+    border-radius: 6px;
 }
+
+.buttonstandard {
+    background-color: white;
+
+}
+
+.buttonstandard a {
+     color: #27C7AB;
+}
+
+/*form*/
+
+.form {
+    float: left;
+    width: 550px;
+}
+
+.formKontakt {
+    font-family: 'ralewayregular';
+    border: 1px solid #27C7AB;
+    height: 30px;
+    font-size: 24px;
+    padding: 10px;
+    width: 550px;
+    margin-bottom: 20px;
+}
+
+.areaKontakt {
+    height: 130px;
+}
+
+input[type=submit] {
+    background-color: #27C7AB;
+    border: none;
+    color: white;
+    border-radius: 6px;
+}
+
+textarea {
+    resize: none;
+}
+
+::-webkit-input-placeholder {
+    color: lightgray; /* Chrome, Opera, Safari */
+}
+
+::-moz-placeholder {
+    color: lightgray; /* Firefox */
+}
+
+::-ms-input-placeholder {
+    color: lightgray; /* IE 10+ */
+}
+
+.formButton {
+    width: 200px;
+}
+
+.fotoChair {
+    float: right;
+    width: 300px;
+}
+
+input[type="checkbox"] {
+    border: 1px solid #27C7AB;
+    height: 30px;
+    padding: 10px;
+    margin-bottom: 20px; 
+}
+
