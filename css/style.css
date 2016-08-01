@@ -341,9 +341,6 @@ nav p {
     text-transform: uppercase;
 }
 
-.cennikTxt {
-
-}
 /*cennik bonus*/
 .bonus {
     padding: 7px 0;
@@ -358,6 +355,28 @@ nav p {
 
 .bonus:nth-child(2n + 0) {
     background-color: #F1F1F1;
+}
+
+.elementCennik .bonusStandard {
+    background-color: white;
+}
+
+.cennikBreakOne {
+    margin: 0;
+    display: block;
+    height: 50px;
+}
+
+.cennikBreakTwo {
+    margin: 0;
+    display: block;
+    height: 40px;
+}
+
+.cennikBreakThree {
+    margin: 0;
+    display: block;
+    height: 18px;
 }
 
 .buttonDolacz{
