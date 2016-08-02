@@ -244,9 +244,9 @@ nav p {
 }
 
 /*cennik*/
-.container_wrap2 {
+.container_wrapCennik {
     clear: both;
-    padding: 20px 0;
+    padding: 20px 0 50px;
     background-color: #F1F1F1;
 }
 
