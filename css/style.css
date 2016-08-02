@@ -412,7 +412,7 @@ nav p {
 .formKontakt {
     font-family: 'ralewayregular';
     border: 1px solid #5be1ce;
-    height: 30px;
+    height: 60px;
     font-size: 24px;
     padding: 10px;
     width: 550px;
@@ -428,6 +428,9 @@ input[type=submit] {
     border: none;
     color: white;
     border-radius: 6px;
+    width: 300px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 textarea {
@@ -456,7 +459,12 @@ textarea {
     width: 300px;
 }
 
+.fotoChairPic {
+    padding: 0 0px 20px 20px;
+}
+
 input[type="checkbox"] {
+    float: left;
     clear: both;
     border: 1px solid #27C7AB;
     height: 30px;
@@ -464,3 +472,27 @@ input[type="checkbox"] {
     margin-bottom: 20px; 
 }
 
+/*footer*/
+.footerElement {
+    padding-top: 40px;
+    line-height: 37px;
+    float: left;
+    color: gray;
+}
+
+.txtFooterUpper {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.footerLogo {
+    float: right;
+}
+
+.footerPic {
+    padding-left: 262px;   
+}
+
+.footerTxt {
+    float:left;
+}
