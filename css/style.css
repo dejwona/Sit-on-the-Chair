@@ -253,6 +253,10 @@ nav p {
     height: 7px;
 }
 
+.underlineKontakt {
+    margin-bottom: 40px;
+}
+
 /*cennik*/
 .elementCennik {
     float: left;
@@ -407,7 +411,7 @@ nav p {
 
 .formKontakt {
     font-family: 'ralewayregular';
-    border: 1px solid #27C7AB;
+    border: 1px solid #5be1ce;
     height: 30px;
     font-size: 24px;
     padding: 10px;
@@ -442,6 +446,7 @@ textarea {
     color: lightgray; /* IE 10+ */
 }
 
+/*kontakt right side*/
 .formButton {
     width: 200px;
 }
@@ -452,6 +457,7 @@ textarea {
 }
 
 input[type="checkbox"] {
+    clear: both;
     border: 1px solid #27C7AB;
     height: 30px;
     padding: 10px;
