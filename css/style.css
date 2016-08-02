@@ -46,7 +46,7 @@ a {
 
 .container_wrap {
     width: 100%;
-    height: 350px;
+    height: 390px;
     background: rgba(255,255,255,1);
     background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(189,189,189,1) 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(189,189,189,1)));
@@ -80,64 +80,78 @@ nav p {
     font-weight: bold;
 }
 
+/*navigation*/
 .navigation {
     float: right;
 }
 
-.navigation .main {
+.main {
     display: inline-block;
     margin-left: 10px;
 }
-/*
+
 .ofirmie {
-    display: none;
+ /*   display: none; */
     position: absolute;
-    right: 340px;
-    top: 10px;
-}
+    right: 612px;
+    top: 15px;
+} 
 
-.ofirmieMain:hover .ofirmie {
+.main .ofirmie:hover div.ofirmie {
     display: block;
-} */
-
-.ofirmie .ofirmieLists {
-    margin-top: 20px;
-}
+} 
 
 .ofirmie::before {
+    position: relative;
+    left: 93px;
     margin-top: 15px;
     text-align: center;
     content: "";
     display: block;
     width: 0; 
     height: 0; 
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-bottom: 5px solid red;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid black;
 }
 
 .ofirmie ul li {
-    font-size: 12px;
+    font-size: 14px;
     display: block;
     width: 100px;
     height: auto;
     background-color: black;
-    line-height: 14px;
+    line-height: 10px;
     padding: 10px;
-}
-
-.ofirmieLists {
-    margin:0;
 }
 
 .bigpicture img {
     float: left;
 }
 
+.arrow {
+    font-weight: 100;
+    color: #27C7AB;
+    font-size: 90px;
+    position: relative;
+    z-index: 100;
+}
+
+.arrowLeft {
+    float: left;
+    top: 100px;
+}
+
+.arrowRight {
+    float: right;
+    top: -157px;
+}
+
 .txtheader {
     color: black;
     padding-top: 30px;
     text-align: center;
+    width: 818px;
 }
 
 .txtheader h1 {
@@ -151,10 +165,13 @@ nav p {
 .button {
     background-color: #27C7AB;
     display: inline;
-    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 50px;
     color: white;
     text-transform: uppercase;
     border-radius: 8px;
+    width: 250px;
 }
 
 /*gallery*/
@@ -450,26 +467,38 @@ textarea {
 }
 
 /*kontakt right side*/
-.formButton {
-    width: 200px;
-}
-
 .fotoChair {
     float: right;
-    width: 300px;
+    width: 330px;
 }
 
 .fotoChairPic {
-    padding: 0 0px 20px 20px;
+    padding: 0 30px 18px;
 }
 
-input[type="checkbox"] {
+input[type=checkbox] {
+    display: block;
     float: left;
     clear: both;
     border: 1px solid #27C7AB;
     height: 30px;
     padding: 10px;
     margin-bottom: 20px; 
+    background: red;
+}
+
+input[type=checkbox]:checked {
+    background-image: url();
+}
+
+.checkTxt {
+    color: lightgray;
+    font-size: 18px;
+}
+
+.formButton {
+    margin-top: 20px;
+    width: 200px;
 }
 
 /*footer*/
