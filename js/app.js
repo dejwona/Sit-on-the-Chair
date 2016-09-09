@@ -42,7 +42,32 @@
 
 
     // zad *
+    // a)
+    var selectOption = document.querySelectorAll(".list_panel");
+    var list_arrow = document.querySelectorAll(".list_arrow");
+    var suma = document.querySelector(".sum");
 
+
+    for (var i =0, len = list_arrow.length; i < len; i++) {
+        list_arrow[i].addEventListener("click", function(e) {
+            console.log("dziala2");
+            var sibling = this.nextElementSibling;
+            if (sibling !== null) {
+                sibling.style.display = "block";
+                if (selectOption[0]) {
+                    console.log("dziala3");
+                    suma.innerText = "200";
+                } else if (selectOption[1]) {
+                    suma.innerText = "300";
+                }
+            }
+        });
+    };
+
+
+    // b) dziala
+    // c)
+    
 
 
 });
