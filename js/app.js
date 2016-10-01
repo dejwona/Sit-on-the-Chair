@@ -123,12 +123,14 @@
         colorValue.innerText = optionsColorPrice;
         patternName.innerText = optionsMaterialName;
         patternValue.innerText = optionsMaterialPrice;
-        console.log(document.getElementById('transport').checked);
-        if (transportChecked==true){
+
+        if (document.getElementById('transport').checked==true){
             transportValue.innerText = transportPrice;
         } else {
            transportValue.innerText = 0; 
+            
         }
+        document.getElementById('sum').innerText = parseInt(optionsSortPrice)+ parseInt(optionsColorPrice) + parseInt(optionsMaterialPrice) + parseInt(transportValue.innerText );
         
     }
 
