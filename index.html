@@ -132,31 +132,31 @@
                 <div class="drop_down_list">
                     <span class="list_label">Wybierz rodzaj</span>
                     <span class="list_arrow"></span>
-                    <ul class="list_panel">
-                        <li>Clair</li>
-                        <li>Margarita</li>
-                        <li>Selena</li>
+                    <ul class="list_panel" id="sort">
+                        <li data-sort-price="200" data-sort-name="Clair">Clair</li>
+                        <li data-sort-price="300" data-sort-name="Margarita">Margarita</li>
+                        <li data-sort-price="400" data-sort-name="Selena">Selena</li>
                     </ul>
                 </div>
-                <div class="drop_down_list">
+                <div class="drop_down_list" id="color">
                     <span class="list_label">Wybierz kolor</span>
                     <span class="list_arrow"></span>
                     <ul class="list_panel">
-                        <li>Czerwony</li>
-                        <li>Czarny</li>
-                        <li>Pomarańczowy</li>
+                        <li data-color-price="100" data-color-name="Czerwony">Czerwony</li>
+                        <li data-color-price="90" data-color-name="Czarny">Czarny</li>
+                        <li data-color-price="80" data-color-name="Pomarańczowy">Pomarańczowy</li>
                     </ul>
                 </div>
-                <div class="drop_down_list">
+                <div class="drop_down_list" id="material">
                     <span class="list_label">Wybierz materiał</span>
                     <span class="list_arrow"></span>
                     <ul class="list_panel">
-                        <li>Tkanina</li>
-                        <li>Skóra</li>
+                        <li data-material-price="50" data-material-name="Tkanina">Tkanina</li>
+                        <li data-material-price="70" data-material-name="Skóra">Skóra</li>
                     </ul>
                 </div>
                 <div class="checkbox check-box">
-                    <input type="checkbox" id="transport" data-transport-price="200">
+                    <input type="checkbox" id="transport" data-transport-price="200" value="true">
                     <label for="transport">Transport</label>
                 </div>
                 <!--<div class="checkbox"></div>-->
@@ -176,16 +176,16 @@
 
             <div class="summary_panel">
                 <div class="panel_left">
-                    <h4 class="title">Twój fotel</h4>
-                    <span class="color"></span>
-                    <span class="pattern"></span>
-                    <span class="transport"></span>
+                    <h4 id="titleName" class="title">Twój fotel</h4>
+                    <span id="colorName" class="color">x</span>
+                    <span id="patternName" class="pattern"></span>
+                    <span id="transportName" class="transport">Transport</span>
                 </div>
                 <div class="panel_right">
-                    <h4 class="title value"></h4>
-                    <span class="color value"></span>
-                    <span class="pattern value"></span>
-                    <span class="transport value"></span>
+                    <h4 id="titleValue" class="title value"></h4>
+                    <span id="colorValue" class="color value">y</span>
+                    <span id="patternValue" class="pattern value"></span>
+                    <span id="transportValue" class="transport value"></span>
                 </div>
                 <div class="sum_label">SUMA</div>
                 <div class="sum"><strong></strong></div>
@@ -210,7 +210,7 @@
             <div class="fotoChair">
                 <img class="fotoChairPic" src="images/red_chair.png">
                 <div class="squaredTwo">
-                    <input type="checkbox" value="None" id="squaredTwo" name="check" />
+                    <input type="checkbox" value="None" id="squaredTwo" value="true" name="check" />
                     <label for="squaredTwo">Zgadzam się na przetwarzanie danych osobowych</label>
                 </div>
                 <input class="formKontakt formButton" type="submit" value="Wyślij"></input>
