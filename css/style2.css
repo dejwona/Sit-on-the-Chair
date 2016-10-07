@@ -166,10 +166,11 @@ body {
 .panel_left h4 , .panel_right h4{
   color: #24baa0;
   font-size: 23px;
+  margin-top: 5px;
 }
 
 .panel_left span{
-  margin-top:10px;
+  margin-top:5px;
   font-size: 22px;
   color: #5b5a5a;
   display: block;
@@ -179,7 +180,7 @@ body {
   display: block;
   font-size: 22px;
   color: #24baa0;
-  margin-top:10px;
+  margin-top:5px;
 }
 .sum_label{
   display: inline-block;
@@ -191,10 +192,9 @@ body {
 
 .sum {
   display: inline-block;
-  width: 100px;
+  width: 98px;
   text-align: right;
-  margin-top: 10px;
-  font-size: 22px;
+  font-size: 25px;
   color: #24baa0;
 }
 
@@ -232,5 +232,6 @@ body {
 }
 
 .title {
-  height: 30px;
+  height: 0px;
+  padding-top: 0;
 }
